@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-light-green);
+}
+
+:root{
+
+    /* Paleta de cores  */
+
+    --color-brown: #71443f;
+    --color-white-brown: #8c7c62;
+    --color-shadow-green: #9dc19d;
+    --color-normal-green: #b5cea4;
+    --color-light-green: #d3d5b0;
+    --color-green-yellow: greenyellow;
+}
+
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    display: inline;
+    justify-content:space-evenly;
+    margin-top: 0;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-between;
+    background-color: green;
+    animation-name: entrada-nav;
+    animation-duration: 1s;
+}
+   
+nav ul li {
+    flex-grow: 1;
+    list-style: none;
+    margin: 10px 40px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white
+}
+
+@media (max-width:650px) {
+    nav ul li {
+        margin: 10px 10px;
+    }
+}
+
+/* ================= ANIMATIONS ============================= */
+@keyframes entrada-nav {
+    from{
+        margin-right: 100%;
+        width: 300%;
+    }
+    to{
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+.card:hover{
+    transform: scale(1.08,1.08);
+    transition-duration: 0.8s;
+    
+}
+
+.card:not(:hover){
+    transform: scale(1,1);
+    transition-duration: 0.8s;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+#imagemIntroducao:hover{
+    transform: scale(1.03,1.03);
+    transition-duration: 1s;
+}
+#imagemIntroducao:not(:hover){
+    transform: scale(1,1);
+    transition-duration: 1s;
+}
+
+/* ================= FIM DAS ANIMATIONS ===================== */
+
+#template{
+    text-align: center;
+    margin: 20px 40px;
+    background-color: var(--color-shadow-green);
+}
+
+#introduction{
+   
+    border-right: 1px solid var(--color-brown);
+    border-left: 1px solid var(--color-brown);
+    border-top: 1px solid var(--color-brown);
+}
+
+#context{
+    text-align: justify;
+    margin: auto 1em;
+}
+
+#imagemIntroducao{
+    width: 60%;
+    height: 60%;
+    border-radius: 100px 0 100px 0;
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+/* GRID */
+
+#containerGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color-light-green);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: var(--color-normal-green);
+    margin-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+#template, footer{
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* PAGINA DE BOVINOS */
+
+#topoEspecie img{
+    width: 100vw;
+    margin: 0;
+    height: 400px;
+
+}
+
+#templateInfo, #containerSobre{
+    margin: auto 20%;
+    
+}
+
+.blocoDeDados{
+    text-align: left;
+}
+.blocoDeDados h2{
+    text-decoration: underline green;
+}
+
+.blocoDeDados img{
+    border-radius: 3px;
+    width: 100%;
+    height: 40%;
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color-brown);
+    border-top: #8c7c62 10px solid;
+    margin-top: 40px;
+    padding-top: 5px;
+    
+}
+
+
+/*  PAGINA SOBRE... */
+

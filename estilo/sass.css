@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background-color: rgb(77, 100, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  animation-name: entrada-nav;
+  animation-duration: 1s;
+}
+nav ul li {
+  flex-grow: 1;
+  list-style: none;
+  margin: 10px 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  nav ul li {
+    flex-grow: 1;
+    list-style: none;
+    margin: 10px 10px;
+  }
+}
+/* ANIMATIONS */
+@keyframes entrada-nav {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+.bigCard {
+  width: 90%;
+  height: 90%;
+  border: 3px solid black;
+  border-radius: 80px 0 80px 0;
+}
+.bigCard h1 {
+  margin: auto 20%;
+  color: black;
+  text-decoration: underline #71443f;
+}
+.bigCard img {
+  width: 100%;
+  height: 70%;
+  border-radius: 0 0 80px 0;
+  margin-top: 40px;
+}
+
+#containerGeneric, #container2, #container1 {
+  display: flex;
+  background-color: greenyellow;
+  width: 50%;
+  height: 500px;
+  border-radius: 80px 0 80px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#container1 {
+  margin: auto 60% auto 5%;
+  animation: container1;
+  animation-duration: 2s;
+}
+
+@keyframes container1 {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#container2 {
+  margin: auto 30% auto 40%;
+  animation: container2;
+  animation-duration: 2s;
+}
+
+@keyframes container2 {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#templateInfo {
+  margin: auto 5%;
+  background-color: #d3d5b0;
+}
+#templateInfo .blocoDeDados {
+  text-align: justify;
+  margin: 20px 20px;
+}
+#templateInfo .blocoDeDados h2 {
+  text-decoration: underline green;
+  padding-top: 50px;
+}
+#templateInfo footer {
+  background-color: var(--color-normal-green);
+  margin-top: 150px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: small;
+  text-align: center;
+}
+
+/*# sourceMappingURL=sass.css.map */
